@@ -15,6 +15,7 @@ int main() {
     setlocale(LC_ALL, "ru");
     string path = "myfile.txt";
     
+/*
     ofstream fout;
     fout.open(path,ofstream::app);
     
@@ -31,6 +32,19 @@ int main() {
     }
     
     fout.close();
-
+*/
+    ifstream fin;
+    fin.open(path);
+    
+    if (!fin.is_open()) {
+        cout << "Ошибка открытия файла!" << endl;
+    } else {
+        cout << "Файл открыт!" << endl;
+        char ch;
+        while (fin.get(ch)) {
+            cout << ch;
+        }
+    }
+    fin.close();
     return 0;
 }
