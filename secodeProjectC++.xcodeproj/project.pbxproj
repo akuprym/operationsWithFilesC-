@@ -41,7 +41,7 @@
 		8427E6162C309C8C00ADFE19 = {
 			isa = PBXGroup;
 			children = (
-				8427E6212C309C8C00ADFE19 /* secodeProjectC++ */,
+				8427E6212C309C8C00ADFE19 /* operationsWithFilesC++ */,
 				8427E6202C309C8C00ADFE19 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8427E6212C309C8C00ADFE19 /* secodeProjectC++ */ = {
+		8427E6212C309C8C00ADFE19 /* operationsWithFilesC++ */ = {
 			isa = PBXGroup;
 			children = (
 				8427E6222C309C8C00ADFE19 /* main.cpp */,
 			);
-			path = "secodeProjectC++";
+			path = "operationsWithFilesC++";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
