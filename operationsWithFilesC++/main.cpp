@@ -21,7 +21,13 @@ int main() {
     if (!fout.is_open()) {
         cout << "Ошибка открытия файла" << endl;
     } else {
-        fout << "Это наши данные!";
+        for (int i = 0; i < 5; i++) {
+            cout << "Введите число:" << endl;
+            int a;
+            cin >> a;
+            fout << a;
+            fout << "\n";
+        }
     }
     
     fout.close();
