@@ -43,7 +43,7 @@ int main() {
         string str;
         while (!fin.eof()) {
             str = ""; // стираем старое значение str
-            fin >> str; // извлекаем строчки из объекта fin
+            getline(fin, str);
             cout << str << endl;
         }
     }
