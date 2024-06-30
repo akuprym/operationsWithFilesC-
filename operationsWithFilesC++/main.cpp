@@ -40,9 +40,11 @@ int main() {
         cout << "Ошибка открытия файла!" << endl;
     } else {
         cout << "Файл открыт!" << endl;
-        char ch;
-        while (fin.get(ch)) {
-            cout << ch;
+        string str;
+        while (!fin.eof()) {
+            str = ""; // стираем старое значение str
+            fin >> str; // извлекаем строчки из объекта fin
+            cout << str << endl;
         }
     }
     fin.close();
